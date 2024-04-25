@@ -32,13 +32,23 @@ namespace NUnit.Pro.PageObjects
 
         String dropDown = "//span[@class='link_span'][contains(text(),'DropDown Menu')]";
         //IWebElement dropDownMenu = driver.FindElement(By.Xpath(dropDown));
-        [FindsBy(How = How.Xpath, Using = "dragAndDrop")]
+        [FindsBy(How = How.Xpath, Using = "dropDown")]
         public IWebElement dropDownMenu;
+
+        public IWebElement getdropDownMenu()
+        {
+            return dropDownMenu;
+        }
+
 
         String dropD = "//Select";
         //IWebElement dropdownElement = driver.FindElement(By.Xpath(dropD));
         [FindsBy(How = How.Xpath, Using = "dropD")]
         public IWebElement dropdownElement;
 
+        public IWebElement getdropdownElement()
+        {
+            return dropdownElement;
+        }
     }
 }

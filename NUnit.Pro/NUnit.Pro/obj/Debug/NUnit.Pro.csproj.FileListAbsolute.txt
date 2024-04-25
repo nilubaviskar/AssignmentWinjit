@@ -1,1 +1,2 @@
+D:\NUnitAutomationFramework\NUnit.Pro\NUnit.Pro\obj\Debug\NUnit.Pro.csproj.AssemblyReference.cache
 D:\NUnitAutomationFramework\NUnit.Pro\NUnit.Pro\obj\Debug\NUnit.Pro.csproj.CoreCompileInputs.cache
