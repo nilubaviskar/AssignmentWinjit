@@ -13,12 +13,12 @@ namespace NUnit.Pro.Tests
         [Test]
         [TestCase("name1","abc@gmail.com")]
         [TestCaseSource("name2","xyZ@gmail.com")]
-        public void SamplePageTest()
+        public void SamplePageTest(object samplePageTestPage)
         {
             
             SamplePageTestPage.samplePageTestPage = new SamplePageTestPage(getDriver());
             //parameterization
-            samplePageTestPage.FillForm(String Name, String Email); ;
+            samplePageTestPage.FillForm();
 
         }
 

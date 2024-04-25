@@ -1,2 +1,4 @@
 D:\NUnitAutomationFramework\NUnit.Pro\NUnit.Pro\obj\Debug\NUnit.Pro.csproj.AssemblyReference.cache
 D:\NUnitAutomationFramework\NUnit.Pro\NUnit.Pro\obj\Debug\NUnit.Pro.csproj.CoreCompileInputs.cache
+C:\Users\Siya Baviskar\AssignmentWinjit\NUnit.Pro\NUnit.Pro\obj\Debug\NUnit.Pro.csproj.AssemblyReference.cache
+C:\Users\Siya Baviskar\AssignmentWinjit\NUnit.Pro\NUnit.Pro\obj\Debug\NUnit.Pro.csproj.CoreCompileInputs.cache

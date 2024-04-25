@@ -1,4 +1,4 @@
-﻿using System;
+﻿/*using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -37,7 +37,7 @@ namespace NUnit.Pro
 
         }*/
 
-        [Test]
+        /*[Test]
         public void DranAndDropImage()
         {
             String dragAndDrop = "//span[@class='link_span'][contains(text(),'Drag And Drop')]";
@@ -83,7 +83,7 @@ namespace NUnit.Pro
             using OpenQA.Selenium.Support.UI;
             using System;*/
 
-            String dropDown = "//span[@class='link_span'][contains(text(),'DropDown Menu')]";
+            /*String dropDown = "//span[@class='link_span'][contains(text(),'DropDown Menu')]";
             IWebElement dropDownMenu = driver.FindElement(By.Xpath(dropDown));
             String dropD = "//Select";
             IWebElement dropdownElement = driver.FindElement(By.Xpath(dropD));
@@ -108,9 +108,9 @@ namespace NUnit.Pro
 
              // Optional: Wait for a few seconds to see the selection
              System.Threading.Thread.Sleep(3000);*/
-        }
+        
 
-        [Test]
+        /*[Test]
         public void SamplePageTest()
         {
             String samplePage = "//span[@class='link_span'][contains(text(),'Sample Page Test')]";
@@ -278,7 +278,7 @@ namespace NUnit.Pro
         }
 
     }
-}
+}*/
 
     
 

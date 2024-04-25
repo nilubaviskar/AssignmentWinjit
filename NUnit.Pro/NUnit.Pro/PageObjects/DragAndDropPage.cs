@@ -12,7 +12,8 @@ using CSharpSelfFramework.utilities;
 
 namespace NUnit.Pro.PageObjects
 {
-    public class DragAndDropPage {
+    public class DragAndDropPage
+    {
         private IWebDriver driver;
         public DragAndDropPage(IWebDriver driver)
         {

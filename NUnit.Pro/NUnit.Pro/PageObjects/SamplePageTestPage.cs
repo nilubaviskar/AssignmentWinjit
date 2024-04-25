@@ -59,36 +59,36 @@ namespace NUnit.Pro.PageObjects
 
 
         String experience = "//*[@id='g2599-experienceinyears']";
-        IWebElement experienceElement = driver.FindElement(By.Xpath(experience);
+        IWebElement experienceElement = driver.FindElement(By.Xpath(experience));
 
 
         String functinalTesting = "//*[@value='Functional Testing']";
-        IWebElement functinalTestingCheckBox = driver.FindElement(By.Xpath(functinalTesting);
+        IWebElement functinalTestingCheckBox = driver.FindElement(By.Xpath(functinalTesting));
 
         String automationTesting = "//*[@value='Automation Testing']";
-        IWebElement automationTestingCheckBox = driver.FindElement(By.Xpath(automationTesting);
+        IWebElement automationTestingCheckBox = driver.FindElement(By.Xpath(automationTesting));
 
         String manualTesting = "//*[@value='Manual Testing']";
-        IWebElement manualTestingCheckBox = driver.FindElement(By.Xpath(manualTesting);
+        IWebElement manualTestingCheckBox = driver.FindElement(By.Xpath(manualTesting));
 
 
         String graduate = "//*[@value='Graduate']";
-        IWebElement graduateOption = driver.FindElement(By.Xpath(graduate);
+        IWebElement graduateOption = driver.FindElement(By.Xpath(graduate));
 
         String postGraduate = "//*[@value='Post Graduate']";
-        IWebElement graduateOption = driver.FindElement(By.Xpath(postGraduate);
+        IWebElement graduateOption = driver.FindElement(By.Xpath(postGraduate));
 
         String other = "//*[@value='Other']";
-        IWebElement otherOption = driver.FindElement(By.Xpath(other);
+        IWebElement otherOption = driver.FindElement(By.Xpath(other));
 
         String alertBox = "//button[contains(text(),'Alert Box : Click Here')]";
-        IWebElement alertBoxElement = driver.FindElement(By.Xpath(alertBox);
+        IWebElement alertBoxElement = driver.FindElement(By.Xpath(alertBox));
 
         String comment = "//*[@class='textarea']";
-        IWebElement commentElement = driver.FindElement(By.Xpath(comment);
+        IWebElement commentElement = driver.FindElement(By.Xpath(comment));
 
         String submit = "//*[@class='contact-submit']";
-        IWebElement submitElement = driver.FindElement(By.Xpath(submit);
+        IWebElement submitElement = driver.FindElement(By.Xpath(submit));
 
 
         public void SelectExperience()
@@ -143,7 +143,7 @@ namespace NUnit.Pro.PageObjects
                 // Find the checkbox element by its ID, XPath, or other locator
                 //IWebElement checkbox = driver.FindElement(By.Id("your_checkbox_id"));
                 String functinalTesting = "//*[@value='Functional Testing']";
-                IWebElement functinalTestingCheckBox = driver.FindElement(By.Xpath(functinalTesting);
+                IWebElement functinalTestingCheckBox = driver.FindElement(By.Xpath(functinalTesting));
                 // Check if the checkbox is not already checked
                 if (!functinalTestingCheckBox.Selected)
                 {
@@ -158,15 +158,16 @@ namespace NUnit.Pro.PageObjects
             {
                 Console.WriteLine("Checkbox element not found: " + e.Message);
             }
+        }
 
-            public void SelectEducationOption()
+         public void SelectEducationOption()
             {
 
 
                 // Find the radio button element by its ID, XPath, or other locator
                 //IWebElement radioButton = driver.FindElement(By.Id("your_radio_button_id"));
                 String graduate = "//*[@value='Graduate']";
-                IWebElement graduateOption = driver.FindElement(By.Xpath(graduate);
+                IWebElement graduateOption = driver.FindElement(By.Xpath(graduate));
 
                 // Check if the radio button is not already selected
                 if (!graduateOption.Selected)
@@ -174,11 +175,7 @@ namespace NUnit.Pro.PageObjects
                     // Click on the radio button to select it
                     graduateOption.Click();
                 }
-
-                // Optional: Wait for a few seconds to see the radio button being selected
-                System.Threading.Thread.Sleep(3000);
-
-
+         
                else
                 {
                     Console.WriteLine("Radio button element not found: " + e.Message);
@@ -186,7 +183,7 @@ namespace NUnit.Pro.PageObjects
 
             }
 
-            public void ClickAlertBox()
+        public void ClickAlertBox()
             {
 
 
@@ -207,26 +204,26 @@ namespace NUnit.Pro.PageObjects
                 System.Threading.Thread.Sleep(3000);
             }
 
-            public void ClocOnSubmitButton()
+        public void ClickOnSubmitButton()
             {
                 submitElement.Click();
             }
         
-            Public void AddComment()
+        public void AddComment()
             {
                 commentElement.SendKeys("test");
             }
         
-            Public void FillForm(String Name, String Email)
+        public void FillForm(String Name, String Email)
             {
-                public void AddName(String Name);
-                public void AddEmail(String Email);
-                public void SelectExperience();
-                public void SelectExpertiseCheckBox();
-                public void SelectEducationOption();
-                public void ClickAlertBox();
-                Public void AddComment();
-                public void ClocOnSubmitButton();
+                AddName();
+                AddEmail();
+                SelectExperience();
+                SelectExpertiseCheckBox();
+                SelectEducationOption();
+                ClickAlertBox();
+                AddComment();
+                ClickOnSubmitButton();
             }
         
         }
@@ -236,7 +233,7 @@ namespace NUnit.Pro.PageObjects
 
 
     }
-}
 
-    }
-}
+
+    
+
